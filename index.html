@@ -1,0 +1,108 @@
+<head>
+    <title>How To - TheGorillaModder</title>
+    <style>
+        body {
+            background-color: #555555;
+            color: white;
+            margin-top: 90px;
+        }
+        .topBar {
+            background-color: black;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 50px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding-left: 10px;
+            align-content: center;
+            transition: height 0.3s ease;
+        }
+        .topBar:hover {
+            height: 80px;
+        }
+        button {
+            padding: 5px;
+            border-radius: 10px;
+            background-color: white;
+            transition: background-color 0.5s ease;
+            transition: color 0.3s ease;
+            transition: transform 0.3s ease;
+            height: 60%;
+            width: 5%;
+        }
+        button:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.1);
+        }
+        .sectionSkipper {
+            background-color: white;
+            color: black;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            transition: background-color 0.5s ease;
+            transition: transform 0.3s ease;
+            transition: color 0.3s ease;
+            width: 150px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .sectionSkipper:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="topBar">
+        <button onclick="changePage('index')">Home</button>
+        <button onclick="changePage('index')">Information</button>
+    </div>
+    <a class="sectionSkipper" href="#Why Did I Start?">Why I Started</a>
+    <a class="sectionSkipper" href="#How to Get Started">How You Can Get Started</a>
+    <h2 id="Why Did I Start?">Why Did I Start?</h2>
+    <h4 style="white-space:pre-line;margin-bottom:150px;">
+        I started making programs and mods for games in early July 2022. I was bored and stumbled across all kinds
+        of cool things people had made for a VR game called Gorilla Tag. I saw players flying around and doing all
+        sorts of crazy stuff, and I wanted to figure out how it all worked.
+
+        Eventually, I discovered modding tools that made it easier to install cheats and mods into the game. One
+        thing led to another, and before long, I figured out how to fly and use cheats myself. That alone kept me
+        entertained for months. (This was still around March at the time.)
+
+        By late May, I started wondering how I could create mods and tools like that on my own. That’s when I came
+        across an app by Microsoft called Visual Studio 2022 Community Edition. I used it to install .NET 2.1, since
+        many Unity games — including Gorilla Tag — are built on it.
+
+        I spent about 6 hours trying to understand the basics using an online template, just to see if I could make
+        something, even if it wasn’t anything special. After all that time, I was still super confused, so I stepped away
+        for about a week.
+
+        When I came back in early July, something clicked. I quickly picked up the core ideas — I just needed a
+        break. From there, I dove deeper. For the first 2–3 months, I studied how Unity worked and learned how to
+        tweak game values to make things more fun.
+
+        Eventually, I started making my own stuff. I enjoyed figuring it all out by myself, though sometimes I turned
+        to forums when I got stuck. Since then, I've continued expanding my knowledge. I now know over 5
+        programming languages.
+
+        Moral of the story: It’s okay to take a break and come back later. Don’t stress or get frustrated — everyone
+        learns at their own pace. I’ve just always happened to be a fast learner.
+    </h4>
+    <h2 id="How to Get Started">How to Get Started</h2>
+    <h4 style="white-space:pre-line;margin-bottom:150px;">
+        
+    </h4>
+    <script>
+        function changePage(name) {
+            window.location.href = `https://thegorillamodder.github.io/Blog/${name}.html`;
+        }
+    </script>
+</body>
